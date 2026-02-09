@@ -7,7 +7,7 @@ export default function NavBar() {
     const pathname = usePathname();
 
     return (
-        <Navbar fluid>
+        <Navbar fluid className="mb-8">
             <span className="self-center whitespace-nowrap text-xl font-semibold text-white">Jeffrey Hua</span>
             <NavbarCollapse>
             <NavbarLink href="/" active={pathname === "/"} >Home</NavbarLink>
