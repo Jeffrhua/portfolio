@@ -6,8 +6,7 @@ export default function Home() {
   return (
     <main className="relative h-screen overflow-hidden">
       {/* Background image */}
-      <div className="absolute inset-0 bg-[url('/oneshot-background.jpg')] bg-cover bg-center bg-no-repeat" aria-hidden="true"/>
-      <div className="absolute inset-0 bg-black/50" aria-hidden="true"/>
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/oneshot-background.jpg')] bg-cover bg-center bg-no-repeat" aria-hidden="true"/>
 
       {/* Main foreground stuff */}
       <div className="relative z-10 flex h-full flex-col">
@@ -15,7 +14,7 @@ export default function Home() {
 
         {/* Card component */}
         <div className="flex flex-1 items-center justify-center">
-          <div className="h-148 w-312 bg-transparent shadow-xl rounded-lg p-4">
+          <div className="h-148 w-312 p-4">
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               
               {/* Left Column */}
@@ -30,9 +29,11 @@ export default function Home() {
               
               {/* Right column */}
               <div className="grid justify-center">
-                <Button size="md" color="dark" className="w-96">
-                  <FaAddressBook className="mr-2 h-5 w-5" /> Resume
-                </Button>
+                <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
+                  <Button size="md" color="dark" className="w-96 cursor-pointer">
+                    <FaAddressBook className="mr-2 h-5 w-5" /> Resume
+                  </Button>
+                </a>
                 <a href="https://github.com/Jeffrhua" target="_blank" rel="noopener noreferrer">
                   <Button size="md" color="dark" className="w-96 cursor-pointer">
                     <FaGithub className="mr-2 h-5 w-5" /> Github
