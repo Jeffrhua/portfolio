@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="relative h-screen overflow-hidden">
       {/* Background image */}
-      <div className="absolute inset-0 bg-[url('/space-background.jpg')] bg-cover bg-center bg-no-repeat" aria-hidden="true"/>
+      <div className="absolute inset-0 bg-[url('/oneshot-background.jpg')] bg-cover bg-center bg-no-repeat" aria-hidden="true"/>
       <div className="absolute inset-0 bg-black/50" aria-hidden="true"/>
 
       {/* Main foreground stuff */}
@@ -15,7 +15,7 @@ export default function Home() {
 
         {/* Card component */}
         <div className="flex flex-1 items-center justify-center">
-          <div className="h-148 w-312 bg-(--cardcolor) shadow-xl rounded-lg p-4">
+          <div className="h-148 w-312 bg-transparent shadow-xl rounded-lg p-4">
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               
               {/* Left Column */}
