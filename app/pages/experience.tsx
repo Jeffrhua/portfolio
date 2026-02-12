@@ -1,7 +1,5 @@
-import NavBar from "../components/navbar";
 import { Timeline, TimelineItem, TimelinePoint, TimelineContent, TimelineTime, TimelineTitle, TimelineBody } from "flowbite-react";
 import { FaExternalLinkAlt } from "react-icons/fa";
-
 
 export default function Experience() {
     return (
@@ -11,7 +9,6 @@ export default function Experience() {
 
             {/* Main foreground stuff */}
             <div className="relative z-10 flex h-full flex-col">
-                <NavBar />
 
                 {/* Timeline Stuff */}
                 <div className="flex flex-col items-center justify-start">
@@ -58,9 +55,6 @@ export default function Experience() {
                     </Timeline>
                 </div>
             </div>
-
-
-
         </main>
     );
 }
