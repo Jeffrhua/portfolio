@@ -1,7 +1,7 @@
 "use client";
 import { Navbar, NavbarCollapse, NavbarLink } from "flowbite-react";
+import { Tab } from "../types/types";
 
-type Tab = "home" | "experience" | "projects" | "schoolwork";
 interface NavBarProps {
   selected: Tab;
   onSelect: (tab: Tab) => void;

@@ -21,12 +21,11 @@ export default function Experience() {
                         <TimelinePoint />
                         <TimelineContent>
                         <TimelineTime>{job.Start} - {job.End}</TimelineTime>
-                        <a href={job.CompanySite} target="_blank" rel="noopener noreferrer">
-                            <TimelineTitle className="flex items-center gap-2">
-                                {job.PosTitle} • {job.Company}
-                                <FaExternalLinkAlt className="h-4 w-4" />
+                            <TimelineTitle>
+                                <a href={job.CompanySite} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
+                                    {job.PosTitle} • {job.Company} <FaExternalLinkAlt className="h-4 w-4" />
+                                </a>
                             </TimelineTitle>
-                        </a>
                         {job.JobDesc.map((desc, i) => (
                             <TimelineBody key={i}>
                                 • {desc}

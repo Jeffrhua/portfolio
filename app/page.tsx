@@ -5,8 +5,7 @@ import Experience from "./pages/experience";
 import Projects from "./pages/projects";
 import Schoolwork from "./pages/schoolwork";
 import PageNavBar from "./components/pageNavbar";
-
-type Tab = "home" | "experience" | "projects" | "schoolwork";
+import { Tab } from "./types/types";
 
 export default function Main() {
   const [selected, setSelected] = useState<Tab>("home");

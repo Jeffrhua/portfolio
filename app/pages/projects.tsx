@@ -1,6 +1,9 @@
 import projects from "../data/projects.json";
+import { useRef } from "react";
+import { ProjectCard } from "../components/projectCard";
 
 export default function Projects() {
+    const videoRef = useRef<HTMLVideoElement>(null);
     return (
         <main className="relative h-screen overflow-hidden p-6">
             {/* Background */}
@@ -12,7 +15,9 @@ export default function Projects() {
                 <hr className="my-6 w-1/3 border-t-2 border-white/50 rounded-full" />
 
                 <div className="grid grid-flow-row grid-cols-3 auto-rows-max">
-
+                    {projects.map((project, index) => (
+                        <ProjectCard key={index} project={project}/>
+                    ))}
                 </div>
             </div>
 
