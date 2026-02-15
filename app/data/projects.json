@@ -1,0 +1,28 @@
+[
+    {
+        "Title": "Listing Tracker Discord Bot",
+        "Description": [
+            "Built in JS which listens and filters for new listings from the <a href=\"https://backpack.tf/api/index.html\">BP.TF API</a>",
+            "Hooked up to a discord bot which creates embeds for each new listing after filtering for potential deals / low listings."
+        ],
+        "Link": "",
+        "Vid": ""
+    },
+    {
+        "Title": "Chess Application / Bot",
+        "Description": [
+            "Implemented a C# application following the book <a href=\"https://leanpub.com/checkmate-csharp\">\"C#eckmate\"</a>.",
+            "Expanded upon through the use of Avalonia to create a small desktop application."
+        ],
+        "Link": "",
+        "Vid": ""     
+    },
+    {
+        "Title": "Monoalphabetic Substitution Decrypter",
+        "Description": [
+            "A monoalphabetic substitution decrypter that utilizes genetic algorithims following <a href=\"https://github.com/rishabh-bector/enigma\">Rishabh Bector's \"Enigma\" decrypter</a>"
+        ],
+        "Link": "https://github.com/Jeffrhua/Monoalphabetic-Substitution-Decrypter",
+        "Vid": ""     
+    }
+]

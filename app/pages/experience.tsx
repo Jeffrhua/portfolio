@@ -1,57 +1,40 @@
 import { Timeline, TimelineItem, TimelinePoint, TimelineContent, TimelineTime, TimelineTitle, TimelineBody } from "flowbite-react";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import experience from "../data/experience.json";
 
 export default function Experience() {
     return (
-        <main className="relative h-screen overflow-hidden">
+        <main className="relative h-screen overflow-hidden p-6">
             {/* Background */}
             <div className="absolute inset-0 h-full bg-linear-to-t from-(--bottomgradient) to-(--topgradient)" aria-hidden="true"></div>
 
             {/* Main foreground stuff */}
             <div className="relative z-10 flex h-full flex-col">
+                <h1 className="mb-4 text-4xl font-bold md:text-5xl lg:text-6xl text-white">Experience</h1>
+                <hr className="my-6 w-1/3 border-t-2 border-white/50 rounded-full" />
 
                 {/* Timeline Stuff */}
                 <div className="flex flex-col items-center justify-start">
                     <Timeline>
-                    <TimelineItem>
+                    {experience.map((job, index) => (
+                        <TimelineItem key={index}>
                         <TimelinePoint />
                         <TimelineContent>
-                        <TimelineTime>Oct 2025 - Dec 2025</TimelineTime>
-                        <a href="https://www.navalsteminterns.us/nreip/" target="_blank" rel="noopener noreferrer">
+                        <TimelineTime>{job.Start} - {job.End}</TimelineTime>
+                        <a href={job.CompanySite} target="_blank" rel="noopener noreferrer">
                             <TimelineTitle className="flex items-center gap-2">
-                                NREIP Research Intern • NAVSEA
+                                {job.PosTitle} • {job.Company}
                                 <FaExternalLinkAlt className="h-4 w-4" />
                             </TimelineTitle>
                         </a>
-                        <TimelineBody>
-                            - Helped with the design and planning of a secure document management system for tracking 
-                            Navy approval chains and workflow
-                        </TimelineBody>
-                        <TimelineBody>
-                            - Utilized SharePoint, Modeling tools, and other Microsoft tools
-                        </TimelineBody>
+                        {job.JobDesc.map((desc, i) => (
+                            <TimelineBody key={i}>
+                                • {desc}
+                            </TimelineBody>
+                        ))}
                         </TimelineContent>
-                    </TimelineItem>
-
-                    <TimelineItem>
-                        <TimelinePoint />
-                        <TimelineContent>
-                        <TimelineTime>Jul 2025 - Sep 2025</TimelineTime>
-                        <a href="https://freightgate.net/" target="_blank" rel="noopener noreferrer">
-                            <TimelineTitle className="flex items-center gap-2">
-                                Programming Intern • FreightGate
-                                <FaExternalLinkAlt className="h-4 w-4" />
-                            </TimelineTitle>
-                        </a>
-                        <TimelineBody>
-                            - Integrated a Stripe payment processing into a full-stack web application, developing both
-                            frontend and backend features and storing transactional data in MySQL
-                        </TimelineBody>
-                        <TimelineBody>
-                            - Utilized APIs to implement application features and designed database schemas
-                        </TimelineBody>
-                        </TimelineContent>
-                    </TimelineItem>
+                        </TimelineItem>
+                    ))}
                     </Timeline>
                 </div>
             </div>

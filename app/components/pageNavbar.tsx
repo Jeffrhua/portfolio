@@ -1,5 +1,5 @@
 "use client";
-import { Navbar, NavbarCollapse, NavbarLink, NavbarBrand, NavbarToggle } from "flowbite-react";
+import { Navbar, NavbarCollapse, NavbarLink } from "flowbite-react";
 
 type Tab = "home" | "experience" | "projects" | "schoolwork";
 interface NavBarProps {

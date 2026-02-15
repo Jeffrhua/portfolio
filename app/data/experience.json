@@ -1,0 +1,24 @@
+[
+    {
+        "PosTitle": "NREIP Research Intern",
+        "Company": "NAVSEA",
+        "CompanySite": "https://www.navalsteminterns.us/nreip/",
+        "Start": "Oct 2025",
+        "End": "Dec 2025",
+        "JobDesc": [
+            "Helped with the design and planning of a secure document management system for tracking Navy approval chains and workflow",
+            "Utilized SharePoint, Modeling tools, and other Microsoft tools"
+        ]
+    },
+    {
+        "PosTitle": "Programming Intern",
+        "Company": "FreightGate",
+        "CompanySite": "https://freightgate.net/",
+        "Start": "Jul 2025",
+        "End": "Sep 2025",
+        "JobDesc": [
+            "Integrated a Stripe payment processing into a full-stack web application, developing both frontend and backend features and storing transactional data in MySQL",
+            "Utilized APIs to implement application features and designed database schemas"
+        ]  
+    }
+]
