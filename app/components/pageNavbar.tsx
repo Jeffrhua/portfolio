@@ -21,9 +21,6 @@ export default function PageNavBar({ selected, onSelect }: NavBarProps) {
             <NavbarLink as="button" onClick={() => onSelect("projects")} active={selected === "projects"} className="cursor-pointer">
                 Projects
             </NavbarLink>
-            <NavbarLink as="button" onClick={() => onSelect("schoolwork")} active={selected === "schoolwork"} className="cursor-pointer">
-                Schoolwork
-            </NavbarLink>
             </NavbarCollapse>
       </Navbar>
     );
