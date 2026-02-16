@@ -10,8 +10,11 @@ import { Tab } from "./types/types";
 export default function Main() {
   const [selected, setSelected] = useState<Tab>("home");
 
+  // Disable scroll state on certain pgs
+  const disableScroll = selected === "home";
+
   return (
-    <div className="relative h-screen overflow-hidden">
+    <div className={`relative h-screen ${disableScroll ? "overflow-hidden" : "overflow-x-hidden"}`}>
       <PageNavBar selected={selected} onSelect={setSelected} />
 
       <div className="text-white">

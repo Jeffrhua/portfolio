@@ -24,5 +24,13 @@
         ],
         "Link": "https://github.com/Jeffrhua/Monoalphabetic-Substitution-Decrypter",
         "Vid": ""     
+    },
+        {
+        "Title": "Monoalphabetic Substitution Decrypter",
+        "Description": [
+            "A monoalphabetic substitution decrypter that utilizes genetic algorithims following <a href=\"https://github.com/rishabh-bector/enigma\">Rishabh Bector's \"Enigma\" decrypter</a>"
+        ],
+        "Link": "https://github.com/Jeffrhua/Monoalphabetic-Substitution-Decrypter",
+        "Vid": ""     
     }
 ]
