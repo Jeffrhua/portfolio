@@ -5,9 +5,9 @@
             "Built in JS which listens and filters for new listings from the <a href=\"https://backpack.tf/api/index.html\">BP.TF API</a>",
             "Hooked up to a discord bot which creates embeds for each new listing after filtering for potential deals / low listings."
         ],
-        "Thumbnail": "/portfolio/Listing-Tracker.png",
+        "Thumbnail": "/Listing-Tracker.png",
         "Link": "",
-        "Vid": "/portfolio/Listing-Tracker.mp4"
+        "Vid": "/Listing-Tracker.mp4"
     },
     {
         "Title": "Window Crawler",
@@ -15,9 +15,9 @@
             "Small Godot project that features a crawler icon roaming around your screen",
             "Utilizes a state machine system to transition between two different states (Idle + Wander)"
         ],
-        "Thumbnail": "/portfolio/Screen-Crawler.png",
+        "Thumbnail": "/Screen-Crawler.png",
         "Link": "https://github.com/Jeffrhua/Window-Crawler",
-        "Vid": "/portfolio/Screen-Crawler.mp4"
+        "Vid": "/Screen-Crawler.mp4"
     },
     {
         "Title": "Chess Application / Bot",
@@ -25,9 +25,9 @@
             "Implemented a C# application following the book <a href=\"https://leanpub.com/checkmate-csharp\">\"C#eckmate\"</a>.",
             "Expanded upon through the use of Avalonia to create a small desktop application."
         ],
-        "Thumbnail": "/portfolio/Chess.png",
+        "Thumbnail": "/Chess.png",
         "Link": "https://github.com/Jeffrhua/Random-Projects/tree/main/Chess",
-        "Vid": "/portfolio/Chess.mp4"     
+        "Vid": "/Chess.mp4"     
     },
     {
         "Title": "Monoalphabetic Substitution Decrypter",
@@ -35,7 +35,7 @@
             "A monoalphabetic substitution decrypter that utilizes genetic algorithims following <a href=\"https://github.com/rishabh-bector/enigma\">Rishabh Bector's \"Enigma\" decrypter</a>"
         ],
         "Link": "https://github.com/Jeffrhua/Monoalphabetic-Substitution-Decrypter",
-        "Thumbnail": "/portfolio/Decrypter.png",
-        "Vid": "/portfolio/Decrypter.mp4"     
+        "Thumbnail": "/Decrypter.png",
+        "Vid": "/Decrypter.mp4"     
     }
 ]

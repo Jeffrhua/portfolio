@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="relative h-screen overflow-hidden p-6">
       {/* Background image */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/portfolio/oneshot-background.jpg')] bg-cover bg-center bg-no-repeat" aria-hidden="true"/>
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/oneshot-background.jpg')] bg-cover bg-center bg-no-repeat" aria-hidden="true"/>
 
       {/* Main foreground stuff */}
       <div className={"fade-style"}>
@@ -30,7 +30,7 @@ export default function Home() {
                 
                 {/* Right column */}
                 <div className="grid justify-center">
-                  <Button as="a" href="/portfolio/Resume.pdf" target="_blank" rel="noopener noreferrer" size="md" color="dark" className="w-96 cursor-pointer">
+                  <Button as="a" href="/Resume.pdf" target="_blank" rel="noopener noreferrer" size="md" color="dark" className="w-96 cursor-pointer">
                       <FaAddressBook className="mr-2 h-5 w-5" /> Resume
                   </Button>
                   <Button as="a" href="https://github.com/Jeffrhua" target="_blank" rel="noopener noreferrer" size="md" color="dark" className="w-96 cursor-pointer">
