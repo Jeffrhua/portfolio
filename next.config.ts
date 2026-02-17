@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   devIndicators: false,
   output: "export",
   basePath: "/portfolio",
-  assetPrefix: "/portfolio",
+  assetPrefix: "/portfolio/",
   images: { unoptimized: true }
 };
 
