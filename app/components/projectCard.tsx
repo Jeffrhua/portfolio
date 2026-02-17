@@ -26,17 +26,20 @@ export function ProjectCard({ project }: { project: Project }) {
     };
 
     return (
-        <Card className="max-w-sm" onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
-        <div className="relative w-full overflow-hidden rounded-base aspect-video">
-            <video ref={videoRef} className="absolute inset-0 h-full w-full object-cover" controls muted playsInline preload="metadata">
-                <source src="/Test.mkv" type="video/x-matroska"/>
-                Your browser does not support the video tag.
-            </video>
+        <Card className="max-w-sm flex" onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
+        <div className="relative w-full h-full overflow-hidden rounded-base aspect-video">
+            {project.Vid && project.Vid !== "None" ?(
+                <video ref={videoRef} className="absolute inset-0 h-full w-full object-cover" controls muted playsInline preload="metadata">
+                    <source src={project.Vid} type="video/mp4"/>
+                    Your browser does not support the video tag.
+                </video>
+            ): null}
             <img src={project.Thumbnail}
                 className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
-                isPlaying ? "opacity-0" : "opacity-100"}`}
+                isPlaying ? "opacity-0" : "opacity-100"} pointer-events-none`}
             />
         </div>
+
         <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {project.Link ? (
                 <a href={project.Link} target="_blank" rel="noopener noreferrer">
@@ -46,27 +49,29 @@ export function ProjectCard({ project }: { project: Project }) {
                 project.Title
             )}
         </h5>
-        {project.Description.map((desc, i) => (
-        <p className="font-normal text-gray-700 dark:text-gray-400" key={i}>
-            •{" "}
-            {parse(desc, {
-            replace: (domNode: any) => {
-                if (domNode.name === "a"){
-                    return(
-                    <a
-                        href={domNode.attribs.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-400 underline hover:text-blue-800"
-                    >
-                        {domToReact(domNode.children)}
-                    </a>
-                    )
+        <div className="h-40 overflow-y-auto">
+            {project.Description.map((desc, i) => (
+            <p className="font-normal text-gray-700 dark:text-gray-400" key={i}>
+                •{" "}
+                {parse(desc, {
+                replace: (domNode: any) => {
+                    if (domNode.name === "a"){
+                        return(
+                        <a
+                            href={domNode.attribs.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-400 underline hover:text-blue-800"
+                        >
+                            {domToReact(domNode.children)}
+                        </a>
+                        )
+                    }
                 }
-            }
-            })}
-        </p>
-        ))}
+                })}
+            </p>
+            ))}
+        </div>
         </Card>
     )
 }

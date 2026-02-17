@@ -27,11 +27,8 @@ export default function Main() {
     window.location.hash = tab;
   };
 
-  // Disable scroll state on certain pgs
-  const disableScroll = selected === "home";
-
   return (
-    <div className={`relative h-screen ${disableScroll ? "overflow-hidden" : "overflow-x-hidden"}`}>
+    <div className="relative h-screen overflow-x-hidden">
       <PageNavBar selected={selected} onSelect={handleSelect} />
 
       <div className="text-white">

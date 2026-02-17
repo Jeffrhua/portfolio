@@ -5,9 +5,19 @@
             "Built in JS which listens and filters for new listings from the <a href=\"https://backpack.tf/api/index.html\">BP.TF API</a>",
             "Hooked up to a discord bot which creates embeds for each new listing after filtering for potential deals / low listings."
         ],
-        "Thumbnail": "/Decrypter.png",
+        "Thumbnail": "/Listing-Tracker.png",
         "Link": "",
-        "Vid": ""
+        "Vid": "/Listing-Tracker.mp4"
+    },
+    {
+        "Title": "Window Crawler",
+        "Description": [
+            "Small Godot project that features a crawler icon roaming around your screen",
+            "Utilizes a state machine system to transition between two different states (Idle + Wander)"
+        ],
+        "Thumbnail": "/Screen-Crawler.png",
+        "Link": "https://github.com/Jeffrhua/Window-Crawler",
+        "Vid": "/Screen-Crawler.mp4"
     },
     {
         "Title": "Chess Application / Bot",
@@ -15,9 +25,9 @@
             "Implemented a C# application following the book <a href=\"https://leanpub.com/checkmate-csharp\">\"C#eckmate\"</a>.",
             "Expanded upon through the use of Avalonia to create a small desktop application."
         ],
-        "Thumbnail": "/Decrypter.png",
-        "Link": "",
-        "Vid": ""     
+        "Thumbnail": "/Chess.png",
+        "Link": "https://github.com/Jeffrhua/Random-Projects/tree/main/Chess",
+        "Vid": "/Chess.mp4"     
     },
     {
         "Title": "Monoalphabetic Substitution Decrypter",
@@ -26,15 +36,6 @@
         ],
         "Link": "https://github.com/Jeffrhua/Monoalphabetic-Substitution-Decrypter",
         "Thumbnail": "/Decrypter.png",
-        "Vid": ""     
-    },
-        {
-        "Title": "Monoalphabetic Substitution Decrypter",
-        "Description": [
-            "A monoalphabetic substitution decrypter that utilizes genetic algorithims following <a href=\"https://github.com/rishabh-bector/enigma\">Rishabh Bector's \"Enigma\" decrypter</a>"
-        ],
-        "Thumbnail": "/Decrypter.png",
-        "Link": "https://github.com/Jeffrhua/Monoalphabetic-Substitution-Decrypter",
-        "Vid": ""     
+        "Vid": "/Decrypter.mp4"     
     }
 ]
