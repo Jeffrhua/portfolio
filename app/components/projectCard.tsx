@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { Card } from "flowbite-react";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import parse, { domToReact } from "html-react-parser";
+import parse, { domToReact, type DOMNode, type Element } from "html-react-parser";
 import { Project } from "../types/types";
 
 export function ProjectCard({ project }: { project: Project }) {
@@ -54,16 +54,17 @@ export function ProjectCard({ project }: { project: Project }) {
             <p className="font-normal text-gray-700 dark:text-gray-400" key={i}>
                 •{" "}
                 {parse(desc, {
-                replace: (domNode: any) => {
-                    if (domNode.name === "a"){
+                replace: (domNode: DOMNode) => {
+                    if (domNode.type === "tag" && domNode.name === "a"){
+                        const el = domNode as Element;
                         return(
                         <a
-                            href={domNode.attribs.href}
+                            href={el.attribs?.href}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-blue-400 underline hover:text-blue-800"
                         >
-                            {domToReact(domNode.children)}
+                            {domToReact(el.children as DOMNode[])}
                         </a>
                         )
                     }
