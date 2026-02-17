@@ -1,5 +1,4 @@
 import projects from "../data/projects.json";
-import { useRef } from "react";
 import { ProjectCard } from "../components/projectCard";
 
 export default function Projects() {

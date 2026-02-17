@@ -1,5 +1,5 @@
 "use client";
-import { Button} from "flowbite-react";
+import { Button } from "flowbite-react";
 import { FaAddressBook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
