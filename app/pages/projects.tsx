@@ -3,7 +3,6 @@ import { useRef } from "react";
 import { ProjectCard } from "../components/projectCard";
 
 export default function Projects() {
-    const videoRef = useRef<HTMLVideoElement>(null);
     return (
         <main className="relative min-h-screen p-6 overflow-x-hidden inset-0">
             {/* Main foreground stuff */}
