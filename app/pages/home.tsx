@@ -4,7 +4,7 @@ import { FaAddressBook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <main className="relative h-screen overflow-hidden p-6">
+    <main className="relative min-h-screen px-4 py-6 sm:px-6">
       {/* Background image */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/portfolio/oneshot-background.jpg')] bg-cover bg-center bg-no-repeat" aria-hidden="true"/>
 
@@ -15,9 +15,9 @@ export default function Home() {
           <hr className="my-6 w-1/3 border-t-2 border-white/50 rounded-full" />
 
           {/* Card component */}
-          <div className="flex flex-1 items-center justify-center">
+          <div className="flex flex-1 items-start justify-center sm:items-center">
             <div className="h-148 w-312 p-4">
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 
                 {/* Left Column */}
                 <div className="space-y-6">
@@ -29,7 +29,7 @@ export default function Home() {
                 </div>
                 
                 {/* Right column */}
-                <div className="grid justify-center">
+                <div className="grid justify-center gap-4">
                   <Button as="a" href="/portfolio/Resume.pdf" target="_blank" rel="noopener noreferrer" size="md" color="dark" className="w-96 cursor-pointer">
                       <FaAddressBook className="mr-2 h-5 w-5" /> Resume
                   </Button>

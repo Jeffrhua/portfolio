@@ -10,7 +10,7 @@ export default function Projects() {
                 <hr className="my-6 w-1/3 border-t-2 border-white/50 rounded-full" />
                 
                 <div className="mx-auto w-full max-w-7xl">
-                    <div className="grid grid-flow-row grid-cols-3 auto-rows-max gap-16">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16">
                         {projects.map((project, index) => (
                             <ProjectCard key={index} project={project}/>
                         ))}

@@ -4,7 +4,7 @@ import experience from "../data/experience.json";
 
 export default function Experience() {
     return (
-        <main className="relative h-screen overflow-hidden p-6">
+        <main className="relative min-h-screen overflow-hidden p-6">
             {/* Main foreground stuff */}
             <div className={"fade-style"}>
                 <div className="relative z-10 flex h-full flex-col">
