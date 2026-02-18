@@ -14,14 +14,14 @@ export default function PageNavBar({ selected, onSelect }: NavBarProps) {
                 <span className="self-center whitespace-nowrap text-xl font-semibold text-white">Jeffrey Hua</span>
             </NavbarBrand>
             <NavbarToggle className="md:hidden"/>
-            <NavbarCollapse className="w-full pb-4 md:px-0 md:pb-0">
-                <NavbarLink as="button" onClick={() => onSelect("home")} active={selected === "home"} className="cursor-pointer">
+            <NavbarCollapse>
+                <NavbarLink as="button" onClick={() => onSelect("home")} active={selected === "home"} className="cursor-pointer w-full">
                     Home
                 </NavbarLink>
-                <NavbarLink as="button" onClick={() => onSelect("experience")} active={selected === "experience"} className="cursor-pointer">
+                <NavbarLink as="button" onClick={() => onSelect("experience")} active={selected === "experience"} className="cursor-pointer w-full">
                     Experience
                 </NavbarLink>
-                <NavbarLink as="button" onClick={() => onSelect("projects")} active={selected === "projects"} className="cursor-pointer">
+                <NavbarLink as="button" onClick={() => onSelect("projects")} active={selected === "projects"} className="cursor-pointer w-full">
                     Projects
                 </NavbarLink>
             </NavbarCollapse>
