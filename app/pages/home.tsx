@@ -4,13 +4,13 @@ import { FaAddressBook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen px-4 py-6 sm:px-6">
+    <main className="relative min-h-screen p-6 overflow-x-hidden">
       {/* Background image */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/portfolio/oneshot-background.jpg')] bg-cover bg-center bg-no-repeat" aria-hidden="true"/>
 
       {/* Main foreground stuff */}
       <div className={"fade-style"}>
-        <div className="relative z-10 flex h-full flex-col">
+        <div className="relative z-10 flex flex-col">
           <h1 className="mb-4 text-4xl font-bold md:text-5xl lg:text-6xl text-white">Who am I?</h1>
           <hr className="my-6 w-1/3 border-t-2 border-white/50 rounded-full" />
 

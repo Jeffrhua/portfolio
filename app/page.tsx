@@ -28,10 +28,12 @@ export default function Main() {
   };
 
   return (
-    <div className="relative h-screen overflow-x-hidden">
-      <PageNavBar selected={selected} onSelect={handleSelect} />
+    <div className="h-screen overflow-hidden flex flex-col">
+      <div className="shrink-0">
+        <PageNavBar selected={selected} onSelect={handleSelect} />
+      </div>
 
-      <div className="text-white">
+      <div className="flex-1 min-h-0 overflow-y-auto overflow-x-hidden text-white">
         {selected === "home" && <Home />}
         {selected === "experience" && <Experience />}
         {selected === "projects" && <Projects />}

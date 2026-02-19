@@ -9,7 +9,7 @@ interface NavBarProps {
 
 export default function PageNavBar({ selected, onSelect }: NavBarProps) {
     return (
-        <Navbar fluid>
+        <Navbar fluid className="sticky top-0 z-50 w-full">
             <NavbarBrand as="div">
                 <span className="self-center whitespace-nowrap text-xl font-semibold text-white">Jeffrey Hua</span>
             </NavbarBrand>

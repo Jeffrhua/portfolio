@@ -30,7 +30,15 @@ export default function RootLayout({
         <ThemeModeScript />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-linear-to-t from-(--bottomgradient) to-(--topgradient) text-(--foreground)`}
+        className={
+          `${geistSans.variable} 
+          ${geistMono.variable} 
+          antialiased 
+          min-h-screen 
+          overscroll-none
+          bg-linear-to-t from-(--bottomgradient) to-(--topgradient) 
+          text-(--foreground)`
+        }
       >
         <ThemeInit />
         {children}

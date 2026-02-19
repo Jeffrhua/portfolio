@@ -4,10 +4,10 @@ import experience from "../data/experience.json";
 
 export default function Experience() {
     return (
-        <main className="relative min-h-screen overflow-hidden p-6">
+        <main className="relative min-h-screen p-6 overflow-x-hidden">
             {/* Main foreground stuff */}
             <div className={"fade-style"}>
-                <div className="relative z-10 flex h-full flex-col">
+                <div className="relative z-10 flex flex-col">
                     <h1 className="mb-4 text-4xl font-bold md:text-5xl lg:text-6xl text-white">Experience</h1>
                     <hr className="my-6 w-1/3 border-t-2 border-white/50 rounded-full" />
 

@@ -3,7 +3,7 @@ import { ProjectCard } from "../components/projectCard";
 
 export default function Projects() {
     return (
-        <main className="relative min-h-screen p-6 overflow-x-hidden inset-0">
+        <main className="relative min-h-screen p-6 overflow-x-hidden">
             {/* Main foreground stuff */}
             <div className={"fade-style"}>
                 <h1 className="mb-4 text-4xl font-bold md:text-5xl lg:text-6xl text-white">Projects</h1>
