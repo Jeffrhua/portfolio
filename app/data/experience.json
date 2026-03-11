@@ -6,8 +6,8 @@
         "Start": "Oct 2025",
         "End": "Dec 2025",
         "JobDesc": [
-            "Helped with the design and planning of a secure document management system for tracking Navy approval chains and workflow",
-            "Utilized SharePoint, Modeling tools, and other Microsoft tools"
+            "Helped with the design and planning of a secure document management system for tracking Navy approval chains and workflow using internal tools.",
+            "Utilized SharePoint, Modeling tools, and other Microsoft software to diagram and model final proposal."
         ]
     },
     {
@@ -18,7 +18,8 @@
         "End": "Sep 2025",
         "JobDesc": [
             "Integrated a Stripe payment processing into a full-stack web application, developing both frontend and backend features and storing transactional data in MySQL",
-            "Utilized APIs to implement application features and designed database schemas"
+            "Converted the program into the Perl language to ensure compatibility with pre-existing legacy systems.",
+            "Utilized APIs to implement application features from various shipping companies such as EasyShip, and designed database schemas for testing kits."
         ]  
     }
 ]
