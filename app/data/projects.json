@@ -37,5 +37,15 @@
         "Link": "https://github.com/Jeffrhua/Monoalphabetic-Substitution-Decrypter",
         "Thumbnail": "/portfolio/Decrypter.png",
         "Vid": "/portfolio/Decrypter.mp4"     
+    },
+    {
+        "Title": "BeachHacks 9.0",
+        "Description": [
+            "Participated in a hackathon and learned about Roblox Studio / Luau to create a arena-based pvp gamemode with a strong emphasis on movement.",
+            "Worked on the creation of the map, various bits of the UI including the ability cooldowns, and some of the movement abilities"
+        ],
+        "Link": "https://devpost.com/software/duelinator",
+        "Thumbnail": "/portfolio/Duelinator.png",
+        "Vid": "/portfolio/Duelinator.mp4"
     }
 ]
